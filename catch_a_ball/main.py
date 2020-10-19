@@ -50,6 +50,19 @@ def new_face(faces_number):
         faces.append((x, y, r, dx, dy, g))
 
 
+# Add more triangle targets
+def new_triangles(tr_number):
+    for i in range(tr_number):
+        x = randint(100, 1100)
+        y = randint(100, 800)
+        r = randint(60, 100)
+        dx = randint(-8, 8)
+        dy = randint(-8, 8)
+        color = COLORS[randint(0, 5)]
+        polygon(screen, color, [(x, y), (x+r, y), (x + r/2, y+r)])
+        triangles.append((x, y, r, dx, dy, color))
+
+
 # Moving of targets with every frame
 def new_frame():
     # Moving of balls
@@ -63,6 +76,20 @@ def new_frame():
         balls[i] = (x, y, r, dx, dy, color)
     for i in range(number_of_balls):
         circle(screen, balls[i][5], (balls[i][0], balls[i][1]), balls[i][2])
+
+    # Moving of triangles
+    for i in range(number_of_triangles):
+        x, y, r, dx, dy, color = triangles[i]
+        (x, y) = (x + dx, y + dy)
+        if x - r < 0 or x + r > 1200:
+            dx = -dx
+        if y - r < 0 or y + r > 900:
+            dy = -dy
+        triangles[i] = (x, y, r, dx, dy, color)
+    for i in range(number_of_triangles):
+        polygon(screen, triangles[i][5], [(triangles[i][0], triangles[i][1]),
+                                          (triangles[i][0]+triangles[i][2], triangles[i][1]),
+                                          (triangles[i][0] + triangles[i][2]/2, triangles[i][1]+triangles[i][2])])
 
     # Moving of faces
     for i in range(number_of_faces):
@@ -89,6 +116,15 @@ def click(cur_event):
             rect(screen, WHITE, (0, 0, 1200, 900), width=100)
             balls.pop(i)
             new_balls(1)
+            break
+
+    for i in range(number_of_triangles):
+        if 0 < cur_event.pos[0]-triangles[i][0] < triangles[i][2] and 0 < cur_event.pos[1]-triangles[i][1] < triangles[i][2]:
+            hits
+            hits += 1
+            rect(screen, WHITE, (0, 0, 1200, 900), width=100)
+            triangles.pop(i)
+            new_triangles(1)
             break
 
     # Check if player hit any face
@@ -128,9 +164,14 @@ clock = pygame.time.Clock()
 finished = False
 
 hits = 0
+
 balls = []
 number_of_balls = 50
 new_balls(number_of_balls)
+
+triangles = []
+number_of_triangles = 20
+new_triangles(number_of_triangles)
 
 faces = []
 number_of_faces = 10
