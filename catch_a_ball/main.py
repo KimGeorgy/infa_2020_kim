@@ -101,6 +101,10 @@ def click(cur_event):
             break
 
 
+def sort_col(i):
+    return int(i[0])
+
+
 # Make a results table
 def results_table():
     # Read existing table
@@ -108,14 +112,14 @@ def results_table():
     file = output.readlines()
     # Add new result
     file.append(str(hits) + " " + input() + '\n')
-    for line in file:
-        line = line.split(' ')
-    file.sort(reverse=True)
+    for i in range(len(file)):
+        file[i] = file[i].split()
+    file.sort(key=sort_col, reverse=True)
 
     # Rewrite results
     output.seek(0)
-    for line in file:
-        output.write(line)
+    for i in range(len(file)):
+        output.write(str(file[i][0]) + " " + file[i][1] + "\n")
     output.close()
 
 
