@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Pushka/.idea/Pushka.iml" filepath="$PROJECT_DIR$/Pushka/.idea/Pushka.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/infa_2020_kim.iml" filepath="$PROJECT_DIR$/.idea/infa_2020_kim.iml" />
     </modules>
   </component>

@@ -19,7 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c1afcc9-0485-4054-bb3b-b64fe3d95041" name="Default Changelist" comment="new results" />
+    <list default="true" id="9c1afcc9-0485-4054-bb3b-b64fe3d95041" name="Default Changelist" comment="new results">
+      <change afterPath="$PROJECT_DIR$/Pushka/.idea/Pushka.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pushka/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pushka/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pushka/Pushka.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/infa_2020_kim.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/infa_2020_kim.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catch_a_ball/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/catch_a_ball/output.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,8 +57,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="3.1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Pushka">
+    <configuration name="3.3 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="infa_2020_kim" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -56,11 +66,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Picture" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3.1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Picture/3.3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -69,19 +79,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="3.2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="infa_2020_kim" />
+    <configuration name="Pushka" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Pushka" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pushka" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3.2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pushka/Pushka.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -90,7 +100,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="3.3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="gun" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="infa_2020_kim" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,32 +108,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3.3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python Console" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="infa_2020_kim" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="/Python Console" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/gun.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gun_obfuscated" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="infa_2020_kim" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/gun_obfuscated.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Pushka" />
+        <item itemvalue="Python.gun" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.3.3" />
-        <item itemvalue="Python.3.1" />
-        <item itemvalue="Python.3.2" />
-        <item itemvalue="Python.Python Console" />
+        <item itemvalue="Python.3.3 (1)" />
+        <item itemvalue="Python.gun_obfuscated" />
       </list>
     </recent_temporary>
   </component>
@@ -260,22 +270,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="new results" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1419" height="208" key="GridCell.Tab.0.bottom" timestamp="1603088767563">
+    <state width="1419" height="283" key="GridCell.Tab.0.bottom" timestamp="1604874617387">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="283" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604874617387" />
+    <state width="1419" height="283" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1604299619371" />
+    <state width="1419" height="243" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1603727316978" />
+    <state width="1419" height="283" key="GridCell.Tab.0.center" timestamp="1604874617385">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="283" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604874617385" />
+    <state width="1419" height="283" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1604299619369" />
+    <state width="1419" height="243" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1603727316978" />
+    <state width="1419" height="283" key="GridCell.Tab.0.left" timestamp="1604874617384">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="283" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604874617384" />
+    <state width="1419" height="283" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1604299619368" />
+    <state width="1419" height="243" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1603727316977" />
+    <state width="1419" height="283" key="GridCell.Tab.0.right" timestamp="1604874617386">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="283" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604874617386" />
+    <state width="1419" height="283" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1604299619370" />
+    <state width="1419" height="243" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1603727316978" />
+    <state x="221" y="68" key="SettingsEditor" timestamp="1603705152134">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1419" height="208" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1603088767563" />
-    <state width="1419" height="208" key="GridCell.Tab.0.center" timestamp="1603088767562">
-      <screen x="0" y="23" width="1440" height="812" />
-    </state>
-    <state width="1419" height="208" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1603088767562" />
-    <state width="1419" height="208" key="GridCell.Tab.0.left" timestamp="1603088767562">
-      <screen x="0" y="23" width="1440" height="812" />
-    </state>
-    <state width="1419" height="208" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1603088767562" />
-    <state width="1419" height="208" key="GridCell.Tab.0.right" timestamp="1603088767563">
-      <screen x="0" y="23" width="1440" height="812" />
-    </state>
-    <state width="1419" height="208" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1603088767563" />
+    <state x="221" y="68" key="SettingsEditor/0.23.1440.812@0.23.1440.812" timestamp="1603705152134" />
     <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1603088760018">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
