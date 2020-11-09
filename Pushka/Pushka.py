@@ -102,7 +102,13 @@ class Ball:
             return False
 
     def gunhit(self):
-        if (self.x - gun.x)**2 + (self.y - gun.y)**2 < (self.r+10)**2 and self.color == 'black':
+        if (self.x - gun.x)**2 + (self.y - gun.y)**2 < (self.r+10)**2 and self.color == 'black' and gun.live == 1:
+            return True
+        else:
+            return False
+
+    def ophit(self):
+        if (self.x - op.x)**2 + (self.y - op.y)**2 < (self.r+10)**2 and self.color != 'black' and op.live == 1:
             return True
         else:
             return False
@@ -257,7 +263,7 @@ op.vx = 10
 
 
 def new_game(event=''):
-    global gun, targets, points, screen1, balls, bullet
+    global gun, op, targets, points, screen1, balls, bullet
     for i in range(number_of_targets):
         t = Target()
         t.new_target()
@@ -279,20 +285,27 @@ def new_game(event=''):
     z = 0.016
     t_live = 1
     gun.live = 1
+    op.live = 1
     while t_live and gun.live or balls:
         gun.move()
         op.move()
         for t in targets:
             t.move()
+
         for b in balls:
             b.move()
             b.set_coords()
+
             if b.gunhit():
                 gun.live = 0
                 points -= 2
                 canv.itemconfig(screen1, text='Вы проиграли')
                 canv.bind('<Button-1>', '')
                 canv.bind('<ButtonRelease-1>', '')
+
+            if b.ophit():
+                op.live = 0
+                points += 2
 
             for t in targets:
                 if b.hittest(t) and t.live:
@@ -324,7 +337,7 @@ def new_game(event=''):
         op.targetting()
         op.power_up()
     canv.itemconfig(screen1, text='')
-    for i in range(number_of_targets):
+    for i in range(len(targets)):
         canv.delete(targets[0].id)
         canv.delete(targets[0].id_points)
         targets.remove(targets[0])

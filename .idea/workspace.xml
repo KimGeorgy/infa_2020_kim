@@ -19,16 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c1afcc9-0485-4054-bb3b-b64fe3d95041" name="Default Changelist" comment="new results">
-      <change afterPath="$PROJECT_DIR$/Pushka/.idea/Pushka.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pushka/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pushka/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pushka/Pushka.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/infa_2020_kim.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/infa_2020_kim.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="9c1afcc9-0485-4054-bb3b-b64fe3d95041" name="Default Changelist" comment="improved Pushka.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catch_a_ball/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/catch_a_ball/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pushka/Pushka.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pushka/Pushka.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Python.Pushka">
     <configuration name="3.3 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -245,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603088752155</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="improved Pushka.py">
+      <created>1604874930519</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604874930519</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,40 +267,43 @@
     <MESSAGE value="changed README.md" />
     <MESSAGE value="changed" />
     <MESSAGE value="new results" />
-    <option name="LAST_COMMIT_MESSAGE" value="new results" />
+    <MESSAGE value="improved Pushka.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved Pushka.py" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1419" height="283" key="GridCell.Tab.0.bottom" timestamp="1604874617387">
+    <state width="1419" height="283" key="GridCell.Tab.0.bottom" timestamp="1604903613577">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="283" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604874617387" />
+    <state width="1419" height="283" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604903613577" />
     <state width="1419" height="283" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1604299619371" />
     <state width="1419" height="243" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1603727316978" />
-    <state width="1419" height="283" key="GridCell.Tab.0.center" timestamp="1604874617385">
+    <state width="1419" height="283" key="GridCell.Tab.0.center" timestamp="1604903613575">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="283" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604874617385" />
+    <state width="1419" height="283" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604903613575" />
     <state width="1419" height="283" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1604299619369" />
     <state width="1419" height="243" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1603727316978" />
-    <state width="1419" height="283" key="GridCell.Tab.0.left" timestamp="1604874617384">
+    <state width="1419" height="283" key="GridCell.Tab.0.left" timestamp="1604903613574">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="283" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604874617384" />
+    <state width="1419" height="283" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604903613574" />
     <state width="1419" height="283" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1604299619368" />
     <state width="1419" height="243" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1603727316977" />
-    <state width="1419" height="283" key="GridCell.Tab.0.right" timestamp="1604874617386">
+    <state width="1419" height="283" key="GridCell.Tab.0.right" timestamp="1604903613575">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="283" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604874617386" />
+    <state width="1419" height="283" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604903613575" />
     <state width="1419" height="283" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1604299619370" />
     <state width="1419" height="243" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1603727316978" />
-    <state x="221" y="68" key="SettingsEditor" timestamp="1603705152134">
-      <screen x="0" y="23" width="1440" height="812" />
+    <state x="333" y="29" key="SettingsEditor" timestamp="1604879464730">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="333" y="29" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1604879464730" />
     <state x="221" y="68" key="SettingsEditor/0.23.1440.812@0.23.1440.812" timestamp="1603705152134" />
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1603088760018">
-      <screen x="0" y="23" width="1440" height="812" />
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2" timestamp="1604874937442">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604874937442" />
     <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.812@0.23.1440.812" timestamp="1603088760018" />
   </component>
 </project>
