@@ -87,6 +87,7 @@ class Ball:
                     self.vx += 5
                 else:
                     self.vx = 0
+        self.set_coords()
 
     def hittest(self, obj):
         """Функция проверяет сталкивалкивается ли данный обьект с целью, описываемой в обьекте obj.
@@ -216,11 +217,13 @@ class Target:
         self.id = canv.create_oval(0, 0, 0, 0)
         self.id_points = canv.create_text(30, 30, text=points, font='28')
         self.new_target()
+        self.starttime = 0
+        self.cooldown = 3
 
     def new_target(self):
         """ Инициализация новой цели. """
-        x = self.x = rnd(600, 780)
-        y = self.y = rnd(300, 550)
+        x = self.x = rnd(100, 700)
+        y = self.y = rnd(100, 500)
         r = self.r = rnd(2, 50)
         vx = self.vx = rnd(0, 10)
         vy = self.vy = rnd(0, 10)
@@ -247,8 +250,45 @@ class Target:
         canv.itemconfig(self.id_points, text=points)
 
 
+class Bomb:
+    def __init__(self):
+        self.x = -10
+        self.y = -10
+        self.vy = 0
+        self.ay = 1
+        self.color = 'black'
+        self.size = 10
+        self.id = canv.create_rectangle(self.x - self.size, self.y - self.size,
+                                        self.x + self.size, self.y + self.size, fill=self.color)
+
+    def set_coords(self):
+        canv.coords(
+            self.id,
+            self.x - self.size, self.y - self.size,
+            self.x + self.size, self.y + self.size
+        )
+        canv.itemconfig(self.id, fill=self.color)
+
+    def move(self):
+        self.y += self.vy + self.ay/2
+        self.vy += self.ay
+        self.set_coords()
+
+    def hittest(self):
+        if abs(gun.x - self.x) < 2*self.size and abs(gun.y - self.y) < 2*self.size:
+            return True
+        else:
+            return False
+
+    def boom(self):
+        self.size *= 2
+        self.color = 'orange'
+        self.set_coords()
+
+
 number_of_targets = 3
 targets = []
+bombs = []
 points = 0
 screen1 = canv.create_text(400, 300, text='', font='28')
 gun = Gun()
@@ -259,11 +299,11 @@ op = Gun()
 op.type = 0
 op.y = 50
 op.x = 780
-op.vx = 10
+op.vx = 0
 
 
 def new_game(event=''):
-    global gun, op, targets, points, screen1, balls, bullet
+    global gun, op, targets, bombs, points, screen1, balls, bullet
     for i in range(number_of_targets):
         t = Target()
         t.new_target()
@@ -291,10 +331,29 @@ def new_game(event=''):
         op.move()
         for t in targets:
             t.move()
+            if abs(t.x - gun.x) < 20 and t.y < 400 and t.starttime + t.cooldown < time.time():
+                t.starttime = time.time()
+                new_bomb = Bomb()
+                new_bomb.x = t.x
+                new_bomb.y = t.y
+                bombs.append(new_bomb)
+
+        for b in bombs:
+            if b.color == 'orange':
+                canv.delete(b.id)
+                bombs.remove(b)
+                break
+            b.move()
+            if b.hittest():
+                b.boom()
+                gun.live = 0
+                points -= 2
+                canv.itemconfig(screen1, text='Вы проиграли')
+                canv.bind('<Button-1>', '')
+                canv.bind('<ButtonRelease-1>', '')
 
         for b in balls:
             b.move()
-            b.set_coords()
 
             if b.gunhit():
                 gun.live = 0
@@ -330,6 +389,12 @@ def new_game(event=''):
             if b.time + b.live < time.time() and (b.vx == b.vy == 0 or not b.type):
                 canv.delete(b.id)
                 balls.remove(b)
+
+        if not gun.live:
+            for i in range(len(targets)):
+                canv.delete(targets[0].id)
+                canv.delete(targets[0].id_points)
+                targets.remove(targets[0])
         canv.update()
         time.sleep(0.03)
         gun.targetting()
@@ -337,10 +402,6 @@ def new_game(event=''):
         op.targetting()
         op.power_up()
     canv.itemconfig(screen1, text='')
-    for i in range(len(targets)):
-        canv.delete(targets[0].id)
-        canv.delete(targets[0].id_points)
-        targets.remove(targets[0])
     canv.delete(gun)
     canv.delete(op)
     root.after(750, new_game)
